@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FARHAN NOSRATI | Luxury Real Estate Consultant</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0a0a0a;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* Header */
+
+header{
+position:fixed;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.8);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+header h1{
+color:#d4af37;
+letter-spacing:2px;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+/* Hero */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 8%;
+background:radial-gradient(circle at top,#1a1a1a,#000);
+}
+
+.hero-text{
+max-width:550px;
+animation:fadeSlide 1.5s ease forwards;
+}
+
+.hero-text h2{
+font-size:50px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.hero-text p{
+margin-bottom:30px;
+color:#ccc;
+line-height:1.6;
+}
+
+.btn{
+background:#d4af37;
+color:#000;
+padding:14px 35px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+box-shadow:0 0 20px rgba(212,175,55,0.5);
+}
+
+.btn:hover{
+background:#fff;
+transform:translateY(-5px);
+}
+
+/* Profile Image */
+
+.hero-img{
+position:relative;
+animation:fadeIn 2s ease forwards;
+}
+
+.hero-img img{
+width:380px;
+border-radius:20px;
+box-shadow:0 0 40px rgba(212,175,55,0.3);
+transition:0.4s;
+}
+
+.hero-img img:hover{
+transform:scale(1.05);
+box-shadow:0 0 60px rgba(212,175,55,0.6);
+}
+
+/* Sections */
+
+section{
+padding:120px 8%;
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.section-title{
+text-align:center;
+font-size:32px;
+margin-bottom:60px;
+color:#d4af37;
+}
+
+/* Services */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:15px;
+border:1px solid #222;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border:1px solid #d4af37;
+box-shadow:0 0 25px rgba(212,175,55,0.2);
+}
+
+.card h3{
+color:#d4af37;
+margin-bottom:15px;
+}
+
+/* Contact */
+
+.contact{
+max-width:600px;
+margin:auto;
+background:#111;
+padding:40px;
+border-radius:20px;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:none;
+border-radius:5px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#000;
+margin-top:80px;
+}
+
+/* WhatsApp */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#d4af37;
+color:#000;
+padding:15px 20px;
+border-radius:50px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 0 20px rgba(212,175,55,0.6);
+transition:0.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+/* Animations */
+
+@keyframes fadeSlide{
+from{opacity:0;transform:translateX(-50px);}
+to{opacity:1;transform:translateX(0);}
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+@media(max-width:900px){
+.hero{
+flex-direction:column;
+text-align:center;
+}
+.hero-img{
+margin-top:40px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>FARHAN NOSRATI</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<div class="hero-text">
+<h2>Luxury Real Estate Investment</h2>
+<p>Strategic property consulting for serious investors. Premium service, smart decisions, and long-term value creation.</p>
+<a href="https://wa.me/989964565970" class="btn">Chat on WhatsApp</a>
+</div>
+
+<div class="hero-img">
+<img src="profile.jpg" alt="Farhan Nosrati">
+</div>
+</div>
+
+<section id="services">
+<h2 class="section-title">Premium Services</h2>
+<div class="services">
+<div class="card">
+<h3>Property Acquisition</h3>
+<p>Professional support in selecting high-potential properties.</p>
+</div>
+<div class="card">
+<h3>Luxury Villas & Apartments</h3>
+<p>Access to exclusive and premium listings.</p>
+</div>
+<div class="card">
+<h3>Investment Consulting</h3>
+<p>ROI-focused strategy and real estate planning.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Me</h2>
+<div class="contact">
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<textarea rows="4" placeholder="Your Message"></textarea>
+<button class="btn">Send Message</button>
+</form>
+<p style="margin-top:20px;">Email: Nosratidevelopments@gmail.com</p>
+<p>WhatsApp: +989964565970</p>
+</div>
+</section>
+
+<footer>
+© 2026 FARHAN NOSRATI | Luxury Real Estate Consultant
+</footer>
+
+<a href="https://wa.me/989964565970" class="whatsapp">WhatsApp</a>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+sections.forEach(sec => {
+const top = sec.getBoundingClientRect().top;
+if(top < window.innerHeight - 100){
+sec.classList.add("show");
+}
+});
+});
+</script>
+
+</body>
+</html>
